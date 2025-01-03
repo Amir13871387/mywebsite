@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Profile Section -->
+    <div class="profile">
+        <img src="images/amirmahdi.jpg" alt="Amir Mahdi" class="profile-image">
+        <h2 class="profile-name">Amir Mahdi</h2>
+        <h3 class="profile-lastname">Ghorbani</h3>
+    </div>
+
+    <!-- Calculator Section -->
+    <div class="calculator">
+        <!-- Display -->
+        <div class="display">
+            <input type="text" id="input" placeholder="0" disabled>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="btn function" onclick="clearDisplay()">AC</button>
+            <button class="btn function" onclick="deleteLast()">DEL</button>
+            <button class="btn operator" onclick="appendValue('%')">%</button>
+            <button class="btn operator" onclick="appendValue('/')">÷</button>
+            <!-- Row 2 -->
+            <button class="btn" onclick="appendValue('7')">7</button>
+            <button class="btn" onclick="appendValue('8')">8</button>
+            <button class="btn" onclick="appendValue('9')">9</button>
+            <button class="btn operator" onclick="appendValue('*')">×</button>
+            <!-- Row 3 -->
+            <button class="btn" onclick="appendValue('4')">4</button>
+            <button class="btn" onclick="appendValue('5')">5</button>
+            <button class="btn" onclick="appendValue('6')">6</button>
+            <button class="btn operator" onclick="appendValue('-')">−</button>
+            <!-- Row 4 -->
+            <button class="btn" onclick="appendValue('1')">1</button>
+            <button class="btn" onclick="appendValue('2')">2</button>
+            <button class="btn" onclick="appendValue('3')">3</button>
+            <button class="btn operator" onclick="appendValue('+')">+</button>
+            <!-- Row 5 -->
+            <button class="btn function" onclick="appendValue('sin(')">sin</button>
+            <button class="btn function" onclick="appendValue('cos(')">cos</button>
+            <button class="btn function" onclick="appendValue('tan(')">tan</button>
+            <button class="btn function" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
